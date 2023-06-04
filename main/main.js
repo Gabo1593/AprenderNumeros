@@ -11,6 +11,8 @@ const cajita9 = document.getElementById("9");
 const cajita10 = document.getElementById("10");
 const fin = document.querySelector(".fin");
 const boton = document.querySelector("button");
+const speack = document.querySelector(".speack");
+const text = document.querySelector("textarea");
 let contadorSpan = document.querySelector("#contador");
 let contador = 0;
 
@@ -42,4 +44,10 @@ changeColor(cajita10);
 
 boton.addEventListener("click", ()=>{
     location.reload();
-})
+});
+
+
+speack.addEventListener("click", ()=>{
+    let sonar = new SpeechSynthesisUtterance(text.value);
+    speechSynthesis.speak(sonar);
+}) 
