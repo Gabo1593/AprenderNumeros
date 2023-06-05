@@ -22,6 +22,10 @@ function changeColor(cajita){
         cajita.style.background = "red";
         contador++;
         contadorSpan.innerText = contador;
+        let sonar = new SpeechSynthesisUtterance(contador);
+
+        speechSynthesis.speak(sonar);
+        console.log(contador)
         if (contador == 10) {
     
             fin.style.display =  "flex";
