@@ -7,6 +7,10 @@ body{
     background-color: pink;
   
 }
+h1{
+    font-family: 'Lobster', cursive;
+    font-size: 2.5rem;
+}
 
 .fin{
     width: 50%;
@@ -19,8 +23,7 @@ body{
     margin-top: 10%;
     margin-left: 25%;
     z-index: 2;
-       
-        
+    border-radius: 20px;
 }
 .fin  h1{
     font-size: 3rem;
@@ -28,7 +31,7 @@ body{
 }
 
 .fin button{
-    width: 200px;
+    width: 165px;
     height: 80px;
     margin: auto;
     font-size: 1.5rem;
@@ -105,6 +108,9 @@ h1{
     height: 200px;
     font-size: 1.5rem;
     font-weight: bold; 
+    border-radius: 20px;
+    border: 2px solid purple;
+    padding: 10px;
 }
 
 .text .speack{

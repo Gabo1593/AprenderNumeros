@@ -14,19 +14,19 @@ const boton = document.querySelector("button");
 const speack = document.querySelector(".speack");
 const text = document.querySelector("textarea");
 let contadorSpan = document.querySelector("#contador");
-let contador = 0;
+// let contador = 0;
 
-contadorSpan.innerText = contador;
+// contadorSpan.innerText = contador;
 function changeColor(cajita){
     cajita.addEventListener("click", ()=>{
         cajita.style.background = "red";
-        contador++;
-        contadorSpan.innerText = contador;
-        let sonar = new SpeechSynthesisUtterance(contador);
+        // contador++;
+        contadorSpan.innerText = cajita.textContent;
+        let sonar = new SpeechSynthesisUtterance( cajita.textContent);
 
         speechSynthesis.speak(sonar);
-        console.log(contador)
-        if (contador == 10) {
+        // console.log(contador)
+        if ( cajita.textContent == 10) {
     
             fin.style.display =  "flex";
         }
